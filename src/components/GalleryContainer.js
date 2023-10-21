@@ -189,7 +189,7 @@ function GalleryContainer({
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          marginTop: "5%",
+          marginTop: "15%",
         }}
       >
         {groupImagesIntoRows().map((row, rowIndex) => (
