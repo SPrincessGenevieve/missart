@@ -25,7 +25,7 @@ function Gallery() {
       <Navbar />
       <div className="gallery-container">
         <div className="gallery-subcontainer">
-          <h1 className="welcome">Welcome to the Gallery</h1>
+          <h1 className="welcome">Welcomeeeeeeeee to the Gallery</h1>
           <div
             style={{
               marginTop: 50,
