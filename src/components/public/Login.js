@@ -31,6 +31,8 @@ function Login() {
               <div>
                 <div>
                   <InputText
+                    height={"4vh"}
+                    width={"40vh"}
                     label={"USERNAME"}
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
@@ -38,6 +40,8 @@ function Login() {
                 </div>
                 <div style={{ marginTop: 25 }}>
                   <InputText
+                    height={"4vh"}
+                    width={"40vh"}
                     type={"password"}
                     label={"PASSWORD"}
                     value={password}

@@ -1,10 +1,26 @@
 import React from "react";
 import "./InputText.css";
 
-function InputSelect({ onChange, value, type, label, name, marginRight }) {
+function InputSelect({
+  onChange,
+  value,
+  type,
+  label,
+  name,
+  marginRight,
+  width,
+  height,
+}) {
   return (
     <>
-      <div style={{ marginRight: marginRight }}>
+      <div
+        style={{
+          marginRight: marginRight,
+          width: width,
+          height: height,
+          marginBottom: 20,
+        }}
+      >
         <div
           style={{
             position: "absolute",
@@ -19,6 +35,7 @@ function InputSelect({ onChange, value, type, label, name, marginRight }) {
         </div>
         <select
           className="selectbox"
+          style={{ width: width, height: height }}
           type={type}
           name={name}
           value={value}

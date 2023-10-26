@@ -1,35 +1,43 @@
+@font-face {
+  font-family: "Fuggles-Regular";
+  src: url("./../../fonts/Fuggles-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .form-container {
   background-color: #ffe1e1;
   height: 100vh;
-  display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex: 1;
 }
 
 .input-container {
-  display: flex;
   flex-direction: column;
   margin-bottom: 25px;
 }
 
 .form-subcontainer {
-  margin-top: 5rem;
+  height: 100%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   display: flex;
 }
 
 .white-container {
-  background-color: rgb(255, 255, 255);
-  height: 40rem;
-  width: 60rem;
-  display: flex;
-  align-items: center; /* Center content vertically */
-  flex-direction: column;
+  background-color: #ffffff;
+  width: 60%;
+  height: 70%;
   border-radius: 50px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
 }
 
 .white-container:hover {
@@ -37,22 +45,35 @@
 }
 
 .input-boxes {
-  display: flex;
-  margin-bottom: 40px;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  padding: 2%;
 }
 
-.input-boxes.contact {
+.input-row {
+  flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 6%;
+  width: 100%;
+  height: 100%;
 }
 
-.input-boxes.status {
+.inner-row {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 6%;
+  margin-right: 5%;
+}
+
+.title-commssion {
+  font-family: Fuggles-Regular;
+  color: #e58f8f;
+  display: flex;
+}
+
+.cloud {
+  position: absolute;
+  left: 0;
+  top: 37vh;
 }

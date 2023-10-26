@@ -9,10 +9,17 @@ function InputText({
   name,
   marginRight,
   placeholder,
+  width,
+  height,
 }) {
   return (
     <>
-      <div style={{ marginRight: marginRight }}>
+      <div
+        style={{
+          marginBottom: "9%",
+          marginRight: marginRight,
+        }}
+      >
         <div
           style={{
             position: "absolute",
@@ -27,6 +34,7 @@ function InputText({
         </div>
         <input
           className="inputbox"
+          style={{ width: width, height: height }}
           type={type}
           name={name}
           value={value}

@@ -47,16 +47,12 @@ function TableComponent() {
       STATUS: item.STATUS,
     }));
 
-    // Create a new workbook
     const workbook = XLSX.utils.book_new();
 
-    // Create a new worksheet with your data
     const worksheet = XLSX.utils.json_to_sheet(exportData);
 
-    // Add the worksheet to the workbook
     XLSX.utils.book_append_sheet(workbook, worksheet, "Table Data");
 
-    // Generate a data URI for the Excel file
     const excelDataURI = XLSX.write(workbook, {
       bookType: "xlsx",
       type: "base64",
@@ -213,7 +209,7 @@ function TableComponent() {
             style={{
               outline: "none",
               border: "1px solid red",
-              width: 300,
+              width: "20%",
               height: 50,
               borderRadius: 15,
               paddingLeft: 20,
@@ -228,7 +224,7 @@ function TableComponent() {
             onChange={handleSearchChange}
             placeholder="search name"
           />
-          <div style={{ marginLeft: "73.5%" }}>
+          <div style={{}}>
             <Button
               onClick={exportToExcel}
               style={{ backgroundColor: "#793c3c", color: "white" }}

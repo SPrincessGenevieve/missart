@@ -8,6 +8,7 @@ import ButtonComponent from "../ButtonComponent";
 import cloud from "./../../assets/cloud.png";
 import InputSelect from "../InputSelect";
 import TermsConsitions from "./TermsConsitions";
+import { Input } from "reactstrap";
 
 function Form(props) {
   // Create state variables to hold form data
@@ -129,72 +130,84 @@ function Form(props) {
       <div className="form-container">
         <div className="form-subcontainer">
           <div className="white-container">
-            <div className="white-subcontainer">
-              <div className="input-container">
-                <div className="input-boxes">
-                  <InputText
-                    label={"NAME"}
-                    marginRight={50}
-                    type="text"
-                    name="NAME"
-                    value={formData.NAME}
-                    onChange={handleInputChange}
-                  ></InputText>
-                  <InputText
-                    label={"DATE TODAY"}
-                    type="date"
-                    name="DATE"
-                    value={formData.DATE}
-                    onChange={handleInputChange}
-                  ></InputText>
-                </div>
-                <div className="input-boxes">
-                  <InputText
-                    label={"DUE DATE"}
-                    marginRight={50}
-                    type="date"
-                    name="DUE"
-                    value={formData.DUE}
-                    onChange={handleInputChange}
-                  ></InputText>
-                  <InputText
-                    label={"PAYMENT FEE"}
-                    type="number"
-                    name="FEE"
-                    value={formData.FEE}
-                    onChange={handleInputChange}
-                  ></InputText>
-                </div>
-                <div className="input-boxes contact">
-                  <InputText
-                    label={"CONTACT"}
-                    marginRight={50}
-                    type="number"
-                    name="CONTACT_NO"
-                    value={formData.CONTACT_NO}
-                    onChange={handleInputChange}
-                  ></InputText>
-                  <InputText
-                    label={"EMAIL"}
-                    marginRight={50}
-                    type="email"
-                    name="EMAIL"
-                    value={formData.EMAIL}
-                    onChange={handleInputChange}
-                  ></InputText>
-                </div>
-                <div className="input-boxes status">
-                  <InputSelect
-                    label={"STATUS"}
-                    type="select"
-                    marginRight={50}
-                    name="STATUS"
-                    value={formData.STATUS}
-                    onChange={handleInputChange}
-                  ></InputSelect>
-                </div>
-              </div>
+            <div className="title-commssion">
+              <h1>Commission Form</h1>
             </div>
+            <div style={{ flexDirection: "row", display: "flex" }}>
+              <InputText
+                width={"30vh"}
+                marginRight={"5%"}
+                label={"NAME"}
+                height={"100%"}
+                type="text"
+                name="NAME"
+                value={formData.NAME}
+                onChange={handleInputChange}
+              ></InputText>
+              <InputText
+                width={"30vh"}
+                height={"100%"}
+                label={"DATE TODAY"}
+                type="date"
+                name="DATE"
+                value={formData.DATE}
+                onChange={handleInputChange}
+              ></InputText>
+            </div>
+            <div style={{ flexDirection: "row", display: "flex" }}>
+              <InputText
+                width={"30vh"}
+                marginRight={"5%"}
+                height={"100%"}
+                label={"DUE DATE"}
+                type="date"
+                name="DUE"
+                value={formData.DUE}
+                onChange={handleInputChange}
+              ></InputText>
+              <InputText
+                width={"30vh"}
+                height={"100%"}
+                label={"PAYMENT FEE"}
+                type="number"
+                name="FEE"
+                value={formData.FEE}
+                onChange={handleInputChange}
+              ></InputText>
+            </div>
+            <div style={{ flexDirection: "row", display: "flex" }}>
+              <InputText
+                width={"30vh"}
+                marginRight={"5%"}
+                height={"100%"}
+                label={"CONTACT"}
+                type="number"
+                name="CONTACT_NO"
+                value={formData.CONTACT_NO}
+                onChange={handleInputChange}
+              ></InputText>
+              <InputText
+                width={"30vh"}
+                height={"100%"}
+                label={"EMAIL"}
+                type="email"
+                name="EMAIL"
+                value={formData.EMAIL}
+                onChange={handleInputChange}
+              ></InputText>
+            </div>
+            <div style={{ flexDirection: "row", display: "flex" }}>
+              <InputSelect
+                width={"30vh"}
+                height={"6vh"}
+                label={"STATUS"}
+                type="select"
+                name="STATUS"
+                value={formData.STATUS}
+                onChange={handleInputChange}
+              ></InputSelect>
+            </div>
+
             <div className="buttons-container">
               <ButtonComponent
                 text="SUBMIT"
@@ -203,8 +216,8 @@ function Form(props) {
               ></ButtonComponent>
             </div>
           </div>
-          <div className="image-cloud">
-            <img src={cloud}></img>
+          <div>
+            <img className="cloud" src={cloud}></img>
           </div>
         </div>
       </div>
