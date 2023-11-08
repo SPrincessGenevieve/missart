@@ -1,5 +1,5 @@
 import React from "react";
-import "./InputText.css";
+import "./Styles/InputSelect.css";
 
 function InputSelect({
   onChange,
@@ -35,7 +35,7 @@ function InputSelect({
         </div>
         <select
           className="selectbox"
-          style={{ width: width, height: height }}
+          style={{ width: width, height: height, backgroundColor: "white" }}
           type={type}
           name={name}
           value={value}

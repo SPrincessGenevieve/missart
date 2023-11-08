@@ -19,9 +19,9 @@ function Navbar(props) {
         <div className="bar"></div>
       </div>
       <ul className={`nav-list ${showNav ? "show" : ""}`}>
-        <CustomLink to="/list">TABLE</CustomLink>
-        <CustomLink to="/add">GALLERY</CustomLink>
-        <CustomLink to="/update">ABOUT</CustomLink>
+        <CustomLink to="/records">RECORDS</CustomLink>
+        <CustomLink to="/galleryPrivate">GALLERY</CustomLink>
+        <CustomLink to="/aboutUsPrivate">ABOUT US</CustomLink>
         <CustomLink to="/">LOGOUT</CustomLink>
       </ul>
     </nav>

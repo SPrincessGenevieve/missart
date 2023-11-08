@@ -20,8 +20,8 @@ function Navbar(props) {
       </div>
       <ul className={`nav-list ${showNav ? "show" : ""}`}>
         <CustomLink to="/">HOME</CustomLink>
-        <CustomLink to="/gallery">GALLERY</CustomLink>
-        <CustomLink to="/about">ABOUT US</CustomLink>
+        <CustomLink to="/galleryPublic">GALLERY</CustomLink>
+        <CustomLink to="/aboutUsPublic">ABOUT US</CustomLink>
         <CustomLink to="/login">LOGIN</CustomLink>
       </ul>
     </nav>
